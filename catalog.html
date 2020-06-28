@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <base href="https://assets.htmlacademy.ru/content/skills/1/case-01/" /> -->
     <!-- <link href="css/outline.css" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Каталог: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
   </head>
   <body>
     <header class="main-header">
       <nav class="main-header-nav">
         <a href="index.html">
           <img
-            src="img/nerdslogo.svg"
+            src="img/nerds-logo.svg"
             width="159.87"
             height="65.02"
             alt="Логотип магазина Nerds"
@@ -34,9 +36,9 @@
         </ul>
         <a href="blank.html">Корзина</a>
       </nav>
+      <h1>Магазин готовых шаблонов</h1>
     </header>
     <main>
-      <h1>Магазин готовых шаблонов</h1>
       <section>
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <p>
@@ -48,30 +50,15 @@
             <legend>Сетка:</legend>
             <ul>
               <li>
-                <input
-                  type="radio"
-                  name="product-group"
-                  value=""
-                  id="filter-adapt"
-                />
+                <input type="radio" name="product-group" id="filter-adapt" />
                 <label for="filter-adapt">Адаптивная</label>
               </li>
               <li>
-                <input
-                  type="radio"
-                  name="product-group"
-                  value=""
-                  id="filter-fix"
-                />
+                <input type="radio" name="product-group" id="filter-fix" />
                 <label for="filter-fix">Фиксированная</label>
               </li>
               <li>
-                <input
-                  type="radio"
-                  name="product-group"
-                  value=""
-                  id="filter-rubber"
-                />
+                <input type="radio" name="product-group" id="filter-rubber" />
                 <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
@@ -107,9 +94,9 @@
       <section>
         <h3>Сортировать:</h3>
         <ul>
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По названию</li>
+          <li><a href="">По цене</a></li>
+          <li><a href="">По типу</a></li>
+          <li><a href="">По названию</a></li>
         </ul>
         <!-- Здесь будет декоративный елемент -->
       </section>
@@ -118,11 +105,10 @@
         <ul>
           <li>
             <a href="product.html">
-             <img
-                  src="img/sedona.jpg"
-                  alt="Информационный сайт для туристов"
-                />
-              </p>
+              <img
+                src="img/sedona.jpg"
+                alt="Информационный сайт для туристов"
+              />
             </a>
             <h3>Sedona</h3>
             <p>Информационный сайт для туристов</p>
@@ -133,38 +119,50 @@
           <li>
             <a href="product.html">
               <p>
-              <img
-                src="img/pink.jpg"
-                alt="Продуктовый лендинг приложения для iOS и Android"
-              />
+                <img
+                  src="img/pink.jpg"
+                  alt="Продуктовый лендинг приложения для iOS и Android"
+                />
               </p>
             </a>
           </li>
           <li>
             <a href="product.html">
               <p>
-                <img src="img/borodinskii.jpg" alt="Сайт салона красоты для мужчин" />
+                <img
+                  src="img/borodinskii.jpg"
+                  alt="Сайт салона красоты для мужчин"
+                />
               </p>
             </a>
           </li>
           <li>
             <a href="product.html">
               <p>
-              <img src="img/lesson.jpg" alt="Лендинг курсов повышения квалификации" />
+                <img
+                  src="img/lesson.jpg"
+                  alt="Лендинг курсов повышения квалификации"
+                />
               </p>
             </a>
           </li>
           <li>
             <a href="product.html">
               <p>
-                <img src="img/mishka.jpg" alt="Интернет-магазин вязаных игрушек" />
+                <img
+                  src="img/mishka.jpg"
+                  alt="Интернет-магазин вязаных игрушек"
+                />
               </p>
             </a>
           </li>
           <li>
             <a href="product.html">
               <p>
-                <img src="img/kvass.jpg" alt="Промо-сайт производителя крафтового кваса" />
+                <img
+                  src="img/kvass.jpg"
+                  alt="Промо-сайт производителя крафтового кваса"
+                />
               </p>
             </a>
           </li>
@@ -180,23 +178,51 @@
             <a href="#">3</a>
           </li>
         </ul>
-        <button type="button">Следующая</button>
+        <a class="paginatior-link" href="#">Следующая</a>
       </section>
-      <footer class="main-footer">
+    </main>
+    <div class="map">
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <!-- Здесь будет карта -->
+        <h4>Nёrds Design Studio</h4>
+        <p class="contacts-text">
+          191186, Санкт-Петербург,<br />
+          ул. Б. Конюшенная, д. 19/8
+          <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+        </p>
+        <a class="contacts-heading" href="#">
+          Напишите нам
+        </a>
+      </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.32085871590275!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1593341026067!5m2!1sru!2sua"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border: 0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      >
+      </iframe>
+    </div>
+    <footer class="main-footer">
+      <div class="offers">
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-        <ul class="social-list">
-          <li class="social-list-item">
-            <a href="#">В контакте</a>
-          </li>
-          <li class="social-list-item">
-            <a href="#">Фейсбук</a>
-          </li>
-          <li class="social-list-item">
-            <a href="#">Инстаграм</a>
-          </li>
-        </ul>
-      </footer>
-    </main>
+      </div>
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a href="#">В контакте</a>
+        </li>
+        <li class="social-list-item">
+          <a href="#">Фейсбук</a>
+        </li>
+        <li class="social-list-item">
+          <a href="#">Инстаграм</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

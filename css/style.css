@@ -1,7 +1,7 @@
-/* Vauiables */
+/* Variables */
 
 :root {
-  --basic-white: #EEEEEE;
+  --basic-min-grey: #EEEEEE;
   --basic-light-white: #E1E1E1;
   --basic-grey: #888888;
   --basic-extra-grey: #4D4D4D;
@@ -32,7 +32,18 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-light-dark);
-  background-color: var(--basic-grey);
+  /* background-color: var(--basic-grey); */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
 }
 
 img {
@@ -43,10 +54,11 @@ img {
 /* Main navigation */
 
 .main-navigation {
-  font-weight: 500;
+
+
   line-height: 30px;
   color: var(--basic-dark);
-  background-color: var(--basic-white);
+  background-color: var(--basic-min-grey);
 }
 
 .site-navigation {
@@ -120,7 +132,7 @@ img {
 
 .button-sites:active {
   background-color: var(--basic-extra-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 
 }
 
@@ -135,7 +147,7 @@ img {
 
 .button-applications:active {
   background-color: var(--basic-extra-green);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .advantages .button-presentations {
@@ -149,7 +161,7 @@ img {
 
 .button-presentations:active {
   background-color: var(--basic-extra-yellow);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .advantages .button {
@@ -253,5 +265,10 @@ img {
 
 .social-button:active {
   background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+/* Catalog */
+.main-header {
+  background-color: var(--basic-min-grey);
 }
